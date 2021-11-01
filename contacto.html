@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="bodycontacto">
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="index.html">BAUMA</a></li>
+                    <li> Home </li>
+                    <li> <a href="tienda.html">Tienda</a>
+                    </li>
+                    <li> <a href="preguntas.html"> Preguntas frecuentes</a>
+                    </li>
+                    <li> <a href="https://www.instagram.com/baumaind/?hl=es">Instagram</a>
+                    </li>
+                    <li> <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <form action="formularioConsulta">
+        <fieldset>
+            <legend>Contacto </legend>
+            <!--enmarcado-->
+            <label for="nombre">Nombre</label>
+            <input type="text" name="name" placeholder="Ingrese su nombre" required id="nombre">
+            <br>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="Apellido" placeholder="Ingresa tu Apellido" required id="apellido">
+            <br>
+            <label for="whatsapp">Whatsapp</label>
+            <input type="number" id="whatsapp" name="whatsapp" placeholder="Ingresa tu Whatsapp" required>
+            <br>
+            <label for="correo">Correo electronico</label>
+            <input type="text" id="correo" name="correo" placeholder="Ingresa tu correo electronico" required>
+            <br>
+            <label for="categoria">Categoria</label>
+            <select name="categoria" id="categoria">
+                <option value="Seleccione su categoria"></option>
+                <option value="cf">Consumidor final</option>
+                <option value="m">Mayorista</option>
+            </select>
+            <br>
+            <br>
+            <label for="consulta">Escribi tu consulta</label>
+            <br>
+            <textarea name="consulta" id="consulta" cols="30" rows="10" maxlength="1000"></textarea>
+
+            <div></div>
+            <label for="comunicacion">¿Cómo preferis que te contectemos?</label>
+            <div></div>
+            <input type="radio" name="Ccomunicacion" value="whatsapp" id="comunicacion"> Whatsapp
+            <div></div>
+            <input type="radio" name="comunicacion" value="correo"> Correo electronico
+            <div></div>
+
+            <div>¿En que horario nos podemos contactar?</div>
+            <input type="checkbox" name="mañana"> 08:00 - 12:00
+            <input type="checkbox" name="tarde"> 12:00 - 18:00
+            <input type="checkbox" name="noche"> 18:00 - 22:00
+            <br>
+            <input type="submit" value="Envia tu consulta">
+            <input type="reset" value="limpiar formulario">
+            <p> Gracias por contactarte con nosotros, a la brevedad nos comunicaremos con vos para despejarte todas las
+                dudas</p>
+        </fieldset>
+    </form>
+    <footer>
+        <div>
+            <ul>
+
+                <li>BAUMA</li>
+            </ul>
+
+            <ul>
+                <li>HOME</li>
+                <li>Productos </li>
+                <li> Consultas</li>
+            </ul>
+
+            <ul>
+                <li>Contacto</li>
+                <li>3512410736</li>
+                <li>baumaind@gmail.com</li>
+
+            </ul>
+
+            <ul>
+                <li>Seguinos</li>
+                <li>@baumaind</li>
+                <li> Bauma indumentaria</li>
+
+        </div>
+    </footer>
+</body>
+
+</html>

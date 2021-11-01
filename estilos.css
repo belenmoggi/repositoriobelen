@@ -1,0 +1,230 @@
+body {
+    padding: 2vh;
+    margin: 2vh;
+    background-color: rgba(235, 235, 235, 0.342);
+    font-family:'Poppins', sans-serif;
+    justify-content: space-between;
+    
+}
+
+body header nav div ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+body header nav {
+    margin: 3%;
+    border-style: none;
+  
+  
+}
+
+    body header nav ul li{
+         display: inline-block;
+         text-transform: uppercase;
+         text-align: center;
+         font-size: 1.1rem;
+         color:rgb(55, 69, 85);
+         padding: 2rem;
+         background-color: rgba(250, 128, 114, 0.185);
+}
+
+body header nav ul li a{
+    text-decoration: none;
+    color:rgb(55, 69, 85);
+}
+
+.new {
+    background-image: url("./img/primavera.jpg");
+    background-color: rosybrown;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    padding: 2vh;
+    text-align: center;
+    font-size: 7vh;
+    color:rgb(10, 94, 46);   
+    max-width: 100%;
+    height: auto;
+    font-family:'Abril Fatface', cursive;
+    animation-name: collection;
+    animation-duration: 10s;
+    position: relative;
+    animation-direction: normal;
+}
+
+@keyframes collection {
+    0% {
+        opacity: 0;
+    }
+
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.vermas {
+    font-size: 2vh;
+    color:rgb(55, 69, 85);
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.1rem;
+
+}
+
+.title {
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to top, darksalmon, pink ) ;
+    animation-name: productos;
+    animation-duration: 10s;
+    position: relative;
+    animation-direction: normal;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes productos {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    50% {
+        left: 0px;
+        top: 20px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+.galeria {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3rem;
+    color:rgb(55, 69, 85);
+    padding:2vh; 
+    text-decoration: none;
+    list-style: none;
+    border-style: none; 
+}
+
+.galeria img{
+    width: 30%;
+}
+
+.galeria img:hover{
+    transform: scale(1.3);
+}
+
+
+/* --tienda -- */
+
+.grid {
+    display:grid;
+    height: 100vh;
+    margin: 1vp;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    height: 100%;
+    grid-template-rows: 2% auto 20%;
+    margin: 0%;
+    grid-row: auto;
+}
+
+.header { 
+    grid-area: header; 
+
+}
+
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+}
+
+body main div section {
+    display: flex;
+    width: 28%;
+    padding: 2 px;
+    margin: 5%;
+}
+
+body main div section img {
+    display: flex;
+}
+
+
+.encabezado {
+    padding: 2%;
+    margin: 5%;
+    text-align: center;
+}
+
+
+/*--footer--*/
+/* -------- APLICACION DE FLEX ---------*/
+body footer div {
+    background-color: slategray;
+    background-size: cover;
+    color: thistle;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 5px;
+    flex-direction: row;
+}
+
+body footer ul {
+    list-style: none;
+    align-items: center;
+}
+
+.bauma {
+    font-family:'Abril Fatface', cursive;
+}
+
+#irArriba {
+    font-family:'Abril Fatface', cursive;
+}
+
+
+
+
+/*media*/
+
+@media (min-width: 768 px){
+    title {
+        display: none
+    }
+    
+    body header nav {
+        display:inline-block;
+
+    }
+}
+
+
+@media (min-width: 992 px){
+    .galeria {
+        display:flex;
+        flex-direction: column;
+    }
+
+}
